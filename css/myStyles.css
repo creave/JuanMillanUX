@@ -224,6 +224,10 @@ body, html {
     padding-bottom: 100px
 }
 
+.topSpace{
+    padding-top: 100px
+}
+
 .link-sanserif {
     font-family: 'Khand', sans-serif;
     font-weight: 300;
