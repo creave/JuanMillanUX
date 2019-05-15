@@ -5,10 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Juan Millan – UX/UI Designer Miami-Fort Lauderdale</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-<link href="https://fonts.googleapis.com/css?family=Khand:300,500,700|Quattrocento:400,700" rel="stylesheet">
-<link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/myStyles.css">
 
 <!-- Start Analytics -->
@@ -28,7 +24,6 @@
 
 <body class="bgColor">
     
-    
 <!-- START The overlay -->
 <div id="myNav" class="overlay">
 
@@ -46,8 +41,8 @@
 </div>
 <!-- FINISH The overlay -->
 
-<div class="header">
-    <div class="col-sm-6 col-xs-10 juan-header"> Juan Millan <span class="uxui-header">UX/UI Designer</span></div>
+<div class="header row no-gutters">
+    <div class="col-10 col-sm-6 juan-header"> Juan Millan <span class="uxui-header">UX/UI Designer</span></div>
     <div class="col-sm-6 menu" id="myTopnav">
         <ul>
             <li><a href="#"> HOME</a></li>
@@ -58,28 +53,30 @@
         </ul>
     </div>
 </div> <!-- header -->
+
+
 <div class="section-first" id="home">
     <div class="container content" style="text-align: center"> <span class="textCover">I do UX/UI to empower people and businesses with technology.</span></div>
 </div> <!--home -->
 
-<div class="sections" id="about">
-    <div class="container content">
-        <div class="headings">
-            <h1 class="heading1">About</h1>
-        </div>
-        <div class="col-md-4 col-sm-3">
+<div class="container-fluid content" id="about">
+        <h1 class="heading1">About</h1>
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
             <img class="img-responsive centered" style="margin-bottom:30px;" src="images/juanMillan.png">
         </div>
-        <div class="col-md-8 col-sm-9" >
+        <div class="col-sm-9 col-md-8" >
             <p class="copy">My keen eye for sophisticated aesthetics and deep understanding of human behavior allows me to build products that are beautiful and highly functional. All while keeping business goals in mind. Listen, I’ve been doing this for over 17 years. During that time I’ve been involved in all the steps in the Project Life Cycle.</p>
 
             <p class="copy">I have experience as a BA (Business Analyst) and writing the BRD (Business Requirements Document). I can take those BRD to build wireframes, user flows, mockups and prototypes. I also have experience managing projects in both waterfall and agile methodologies. When it comes to project management I provide more value when my role is the project owner. </p>
 
             <p class="copy"><strong>But enough about me. What about you?</strong> <br> I’m always looking for the next project that will use technology to make people’s life more productive. Look forward hearing from you soon and build something amazing.</p>
         </div> <!-- about text -->
-    </div> <!--about container -->
+    </div> <!--row -->
 </div> <!--about -->
 
+
+<!-- **** START CASE STUDIES **** -->
 <div id="caseStudies">
     <div class="container content"> 
     <div class="row headings">
@@ -87,12 +84,13 @@
             Case Studies
         </h1>
     </div>
-    <a href="bookashuttle.html">
+
+    
     <div class="row caseStudy">
-    <div class="col-md-4 col-md-push-8 col-sm-3 col-sm-push-9">
+    <div class="col-md-4 col-sm-3">
             <img class="thumb img-responsive" src="images/bookashuttle-thumb.jpg">
         </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-9 col-sm-pull-3">
+        <div class="col-md-8 col-sm-9 ">
             <h2 class="heading3-reverse">
             BookAShuttle
             </h2>
@@ -101,13 +99,13 @@
             
         </div>
     </div><!-- case study 1 -->
-    </a><!-- link case study 1 -->
-    <a href="goodwill.html">
+
+
     <div class="row caseStudy">
-        <div class="col-md-4 col-md-push-8 col-sm-3 col-sm-push-9">
+        <div class="col-md-4 col-sm-3">
             <img class="thumb img-responsive" src="images/goodwill-thumb.jpg">
         </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-9 col-sm-pull-3">
+        <div class="col-md-8 col-sm-9">
             <h2 class="heading3-reverse">
             Goodwill South Florida
             </h2>
@@ -116,13 +114,13 @@
             
         </div>
     </div><!-- case study 2 -->
-    </a><!-- link case study 2 -->
-    <a href="orthomax.html">
+
+
     <div class="row caseStudy">
-        <div class="col-md-4 col-md-push-8 col-sm-3 col-sm-push-9">
+        <div class="col-md-4 col-sm-3">
             <img class="thumb img-responsive" src="images/orthomax-thumb.jpg">
         </div>
-        <div class="col-md-8 col-md-pull-4 col-sm-9 col-sm-pull-3">
+        <div class="col-md-8 col-sm-9">
             <h2 class="heading3-reverse">
             Ortho Max
             </h2>
@@ -130,66 +128,72 @@
             <a class="btn-green" href="orthomax.html" target="_self"> <span class="fa fa-angle-double-right "></span>&nbsp;View Case Study</a>
         </div>
     </div><!-- case study 3 -->
-    </a> <!--link case study 3-->
-    </div> <!-- container case studies -->
+
+</div> <!-- container case studies -->
 </div> <!--case studies -->
 
 
 <div class="footer">
     <div class="container content">
-        <div class="col-sm-6">
-        <div class="row skillsHeading">
-        <span class="fa fa-briefcase"></span>&nbsp;&nbsp;PROFESSIONAL SKILLS
-        </div>
-            <div class="col-sm-6 skills">
-                <ul>
-                <li>Branding</li>
-                <li>Sales/Marketing</li>
-                <li>Business Analyst</li>
-                <li>BRD</li>
-                <li>Information Architecture</li>
-                <li>User Stories</li>
-            </ul>
+        <div class="row"><!-- STARTS  MAIN ROW-->
+
+            <div class="col-sm-6" style="border: 1px solid yellow;">
+                <div class="skillsHeading">
+                    <span class="fa fa-briefcase"></span>&nbsp;&nbsp;PROFESSIONAL SKILLS
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 skills">
+                        <ul>
+                            <li>Branding</li>
+                            <li>Sales/Marketing</li>
+                            <li>Business Analyst</li>
+                            <li>BRD</li>
+                            <li>Information Architecture</li>
+                            <li>User Stories</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 skills">
+                        <ul>
+                            <li>Wireframing</li>
+                            <li>Hi-Fi Mockups</li>
+                            <li>Prototypes</li>
+                            <li>Project Management</li>
+                            <li>Account Management</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 skills">
-            <ul>
-                <li>Wireframing</li>
-                <li>Hi-Fi Mockups</li>
-                <li>Prototypes</li>
-                <li>Project Management</li>
-                <li>Account Management</li>
-            </ul>
+
+            <div class="col-sm-6" style="border: 1px solid yellow;">
+                <div class="skillsHeading">
+                    <span class="fa fa-laptop"></span>&nbsp; TECHNICAL SKILLS
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 skills">
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Dreamweaver</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 skills">
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>WordPress</li>
+                            <li>JQuery</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div> <!-- end left columns -->
-        
-        <div class="col-sm-6">
-        <div class="row skillsHeading">
-            <span class="fa fa-laptop"></span>&nbsp; TECHNICAL SKILLS
-        </div>
-            <div class="col-sm-6 skills">
-                <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Dreamweaver</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-            </div>
-            <div class="col-sm-6 skills">
-            <ul>
-                <li>Bootstrap</li>
-                <li>WordPress</li>
-                <li>JQuery</li>
-                <li>JavaScript</li>
-            </ul>
-            </div>
-            
-        </div><!-- end right columns -->
+
+        </div> <!-- END  MAIN ROW-->
     </div> <!-- end container -->
 </div><!-- footer -->
 
 
-<script src="js/bootstrap.js"></script>
 <script src="js/myJavascript.js"></script>
 </body>
 </html>

@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+
+/** IMPORTS **/
+@import url('https://fonts.googleapis.com/css?family=Khand:300,500,700|Quattrocento:400,700');
+@import url("bootstrap4-grid.css");
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css");
+
+@import "mySass-library";
+
+
+/* CSS Document */
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .bgColor {
+	background: #e6f1ef;
+  }
+  
+  .header {
+	background: #738196;
+	height: 50px;
+	z-index: 10;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+	width: 100%;
+  }
+  
+  .juan-header {
+	font-family: 'Khand',sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 30px;
+	color: #afc0cc;
+	padding-top: 8px;
+  }
+  
+  .uxui-header {
+	font-family: 'Khand',sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+  }
+  
+  .menu {
+	text-align: right;
+	color: #afc0cc;
+	font-family: 'Khand', sans-serif;
+	font-size: 18px;
+	ul {
+	  list-style: none;
+	}
+	li {
+	  display: inline-block;
+	  margin-left: 16px;
+	  a {
+		color: #afc0cc;
+		transition: all 0.4s;
+		text-decoration: none;
+		&:hover {
+		  color: #fff;
+		  text-decoration: none;
+		}
+	  }
+	}
+	.icon {
+	  display: none;
+	}
+  }
+  
+  .heading1 {
+	font-family: 'Khand',sans-serif;
+	color: #495466;
+	font-weight: 700;
+	font-size: 60px;
+  }
+  
+  .heading1-reverse {
+	font-family: 'Khand',sans-serif;
+	color: #afc0cc;
+	font-weight: 700;
+	font-size: 60px;
+  }
+  
+  .heading2 {
+	font-family: 'Khand',sans-serif;
+	color: #495466;
+	font-weight: 700;
+	font-size: 40px;
+	margin-top: 60px;
+  }
+  
+  .heading3 {
+	font-family: 'Khand',sans-serif;
+	color: #495466;
+	font-weight: 700;
+	font-size: 26px;
+	margin-top: 40px;
+  }
+  
+  .heading3-reverse {
+	font-family: 'Khand',sans-serif;
+	color: #e6f1ef;
+	font-weight: 700;
+	font-size: 26px;
+  }
+  
+  .copy {
+	font-family: 'Quattrocento', serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+  }
+  
+  .copy-reverse {
+	font-family: 'Quattrocento', serif;
+	color: #afc0cc;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	a {
+	  color: #afc0cc;
+	  text-decoration: none;
+	  transition: all 0.4s;
+	  &:hover {
+		color: #fff;
+		text-decoration: none;
+	  }
+	}
+  }
+  
+  .copy li {
+	font-family: 'Quattrocento', serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+  }
+  
+  /*** HOMEPAGE STYLES **/
+  
+  .section-first {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  
+//   .sections {
+// 	width: 100%;
+// 	margin-bottom: 0px;
+// 	position: relative;
+// 	border: 1px solid red;
+//   }
+  
+  .headings {
+	padding-left: 18px;
+  }
+  
+  #home {
+	background-color: #738196;
+	padding-top: 200px;
+  }
+  
+  #about {
+	background-color: #e6f1ef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+  }
+  
+  #caseStudies {
+	background-color: #2e3746;
+	padding-top: 50px;
+	padding-bottom: 100px;
+  }
+  
+  .textCover {
+	font-family: 'Khand',sans-serif;
+	font-size: 100px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 100%;
+  }
+  
+  .thumb {
+	margin-top: 60px;
+  }
+  
+  .caseStudy {
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: all 1s;
+	&:hover {
+	  background-color: #202835;
+	  text-decoration: none;
+	}
+  }
+  
+  /*** FOOTER STYLES **/
+  
+  .footer {
+	background: #192231;
+	padding-bottom: 30px;
+  }
+  
+  .skillsHeading {
+	font-family: 'Khand',sans-serif;
+	color: #738196;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+	border-bottom-color: #0e7503;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding-top: 40px;
+  }
+  
+  .skills {
+	font-family: 'Khand',sans-serif;
+	color: #738196;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 200%;
+	margin-top: 0;
+	margin-bottom: 0;
+	ul {
+	  padding-left: 0;
+	}
+  }
+  
+  /*** CASE STUDY STYLES **/
+  
+  .heroImage {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	padding-top: 60px;
+  }
+
+  .img-responsive{
+	width: 100%;
+  }
+  
+  .centered {
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .content {
+	max-width: 70%;
+  }
+  
+  .bottomSpace {
+	padding-bottom: 100px;
+  }
+  
+  .topSpace {
+	padding-top: 100px;
+  }
+  
+  .link-sanserif {
+	font-family: 'Khand', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	a {
+	  color: #0e7503;
+	  text-decoration: none;
+	  &:hover {
+		color: #495466;
+		text-decoration: none;
+	  }
+	}
+  }
+  
+  .link-sanserif-reverse {
+	font-family: 'Khand', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+  }
+  
+  .btn-green {
+	font-family: 'Khand', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #44ad41;
+	letter-spacing: 1px;
+	border: thin solid #44ad41;
+	border-radius: 3px;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	transition: all 0.6s;
+	&:hover {
+	  color: #fff;
+	  text-decoration: none;
+	  background-color: #44ad41;
+	}
+  }
+  
+  
+  /*** OVERLAY ***/
+  
+  .overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	background-color: #2e3746;
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay {
+	a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-family: 'Khand', sans-serif;
+	  font-weight: 300;
+	  font-size: 40px;
+	  letter-spacing: 1px;
+	  color: #afc0cc;
+	  display: block;
+	  transition: 0.3s;
+	  &:hover, &:focus {
+		color: #f1f1f1;
+	  }
+	}
+	.closebtn {
+	  position: absolute;
+	  right: 30px;
+	  font-size: 100px;
+	}
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {
+	  a {
+		font-size: 20px;
+	  }
+	  .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	  }
+	}
+  }
+  
+  /*** MEDIA QUERIES ***/
+  
+  @media (max-width: 992px) {
+	.content {
+	  max-width: 100%;
+	}
+	.textCover {
+	  font-size: 80px;
+	}
+  }
+  
+  @media (min-width: 769px) {
+	.sections {
+	  height: 100%;
+	}
+	.tabletAnimation {
+	  width: 80%;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.menu {
+	  padding-top: 18px;
+	  li {
+		margin-left: 0px;
+	  }
+	}
+	.juan-header {
+	  font-size: 26px;
+	}
+	.uxui-header {
+	  font-size: 22px;
+	}
+	.menu {
+	  a {
+		display: none;
+	  }
+	  .icon {
+		display: block;
+	  }
+	}
+	.textCover {
+	  font-size: 60px;
+	}
+	.content {
+	  max-width: 90%;
+	}
+	.bottomSpace {
+	  padding-bottom: 50px;
+	}
+	#home {
+	  padding-top: 200px;
+	}
+	#about {
+	  padding-top: 80px;
+	}
+	#caseStudies {
+	  padding-top: 80px;
+	  padding-bottom: 10px;
+	}
+	.headings {
+	  padding-left: 0;
+	  text-align: center;
+	}
+	.heading3-reverse {
+	  text-align: center;
+	}
+	.thumb {
+	  margin-top: 20px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-bottom: 40px;
+	}
+  }
+  
+  @media (max-width: 400px) {
+	.juan-header {
+	  font-size: 24px;
+	}
+	.uxui-header {
+	  font-size: 18px;
+	}
+	.copy {
+	  font-size: 14px;
+	}
+	.textCover {
+	  font-size: 50px;
+	}
+  }

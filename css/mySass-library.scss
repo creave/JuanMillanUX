@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+
+$coral: #FA7268;
+$dark: #26547C;
+$green: #06D6A0;
+$yellow: #FFD166;
+$white: #FFFCF9;
+
+
+
+$sans: 'Open Sans', sans-serif;
+$serif: 'Playfair Display', serif;
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+
+
+@mixin mainSection ($background, $align){
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	text-align: $align;
+}
+@mixin full-page-div($bg-color) {
+	min-width: 100%;
+	min-height: 100%;
+	background-color: $bg-color;
+}
+
+@mixin btn-cta ($bg, $border, $color){
+	background: $bg;
+	border: 2px solid $border;
+	color: $color;
+	font-family: $serif;
+	font-size: 18px;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 6px;
+	margin: 50px 0px;
+	transition: all .2s;
+	box-shadow: 0 2px 6px 0 #00654A;
+	cursor: pointer;
+}
+@mixin btn-cta-hover ($bg, $border, $color){
+	background: $bg;
+	border: 2px solid $border;
+	color: $color;
+}
+@mixin btn-cta-smaller ($bg, $border, $color){
+	background: $bg;
+	border: 2px solid $border;
+	color: $color;
+	font-family: $serif;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 6px;
+	transition: all .2s;
+	box-shadow: 0 2px 6px 0 #00654A;
+	cursor: pointer;
+}
+@mixin btn-cta-smaller-hover ($bg, $border, $color){
+	background: $bg;
+	border: 2px solid $border;
+	color: $color;
+}
