@@ -86,6 +86,7 @@ body, html {
   font-weight: 700;
   font-size: 40px;
   margin-top: 60px;
+  margin-bottom: -15px;
 }
 
 .heading3 {
@@ -94,6 +95,7 @@ body, html {
   font-weight: 700;
   font-size: 26px;
   margin-top: 40px;
+  margin-bottom: -15px;
 }
 
 .heading3-reverse {
@@ -101,6 +103,17 @@ body, html {
   color: #e6f1ef;
   font-weight: 700;
   font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: -15px;
+}
+
+.heading4 {
+  font-family: 'Khand',sans-serif;
+  color: #495466;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 40px;
+  margin-bottom: -15px;
 }
 
 .copy {
@@ -229,6 +242,10 @@ body, html {
 
 .img-responsive {
   width: 100%;
+}
+
+.img-responsive-half {
+  width: 50%;
 }
 
 .centered {
