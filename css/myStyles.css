@@ -71,6 +71,7 @@ body, html {
   color: #495466;
   font-weight: 700;
   font-size: 60px;
+  line-height: 1em;
 }
 
 .heading1-reverse {
@@ -218,8 +219,6 @@ body, html {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 200%;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .skills ul {
   padding-left: 20px;
@@ -322,14 +321,16 @@ body, html {
 }
 .overlay .closebtn {
   position: absolute;
-  right: 30px;
-  font-size: 100px;
+  right: 10px;
+  font-size: 6em;
+  line-height: .75em;
 }
 
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -339,7 +340,7 @@ body, html {
 /*** MEDIA QUERIES ***/
 @media (max-width: 992px) {
   .content {
-    max-width: 100%;
+    max-width: 70%;
   }
 
   .textCover {
@@ -356,9 +357,6 @@ body, html {
   }
 }
 @media (max-width: 768px) {
-  .menu {
-    padding-top: 18px;
-  }
   .menu li {
     margin-left: 0px;
   }
@@ -374,8 +372,12 @@ body, html {
   .menu a {
     display: none;
   }
+
   .menu .icon {
     display: block;
+    font-size: 2em;
+    margin-top: -8em;
+    margin-left: -1em;
   }
 
   .textCover {
@@ -384,6 +386,14 @@ body, html {
 
   .content {
     max-width: 90%;
+  }
+
+  .caseStudy {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .caseStudy .btn-green {
+    line-height: 3em;
   }
 
   .bottomSpace {
@@ -408,24 +418,25 @@ body, html {
     text-align: center;
   }
 
+  .heading1, .heading1-reverse {
+    margin-bottom: -.4em;
+  }
+
   .heading3-reverse {
     text-align: center;
   }
 
   .thumb {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: 70px auto -30px auto;
   }
 }
 @media (max-width: 400px) {
   .juan-header {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .uxui-header {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .copy {

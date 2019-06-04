@@ -78,6 +78,7 @@ body, html {
 	color: #495466;
 	font-weight: 700;
 	font-size: 60px;
+	line-height: 1em;
 }
   
 .heading1-reverse {
@@ -240,8 +241,6 @@ body, html {
 	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 200%;
-	margin-top: 0;
-	margin-bottom: 0;
 
 	ul {
 	  padding-left: 20px;
@@ -277,9 +276,6 @@ body, html {
 	padding-bottom: 100px;
 }
   
-  // .topSpace {
-	// padding-top: 100px;
-  // }
   
 .link-sanserif {
 	font-family: 'Khand', sans-serif;
@@ -357,114 +353,136 @@ body, html {
 		text-align: center;
 		margin-top: 30px;
   }
- 
+
 	.closebtn {
-	  position: absolute;
-	  right: 30px;
-	  font-size: 100px;
+		position: absolute;
+		right: 10px;
+		font-size: 6em;
+		// background-color: #0e7503;
+		line-height: .75em;
+	}
+	
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*** MEDIA QUERIES ***/
+@media (max-width: 992px) {
+  .content {
+    max-width: 70%;
+  }
+
+  .textCover {
+    font-size: 80px;
+  }
+}
+@media (min-width: 769px) {
+  .sections {
+    height: 100%;
+  }
+
+  .tabletAnimation {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .menu li {
+    margin-left: 0px;
+  }
+
+  .juan-header {
+    font-size: 26px;
+  }
+
+  .uxui-header {
+    font-size: 22px;
+  }
+
+  .menu a {
+    display: none;
+  }
+  .menu .icon {
+		display: block;
+		font-size: 2em;
+		margin-top: -8em;
+		margin-left: -1em;
+  }
+
+  .textCover {
+    font-size: 60px;
+  }
+
+  .content {
+    max-width: 90%;
+	}
+	.caseStudy {
+		flex-direction: column-reverse;
+		text-align: center;
+
+		.btn-green {
+			line-height: 3em;
+		}
 	}
 
+  .bottomSpace {
+    padding-bottom: 50px;
+  }
+
+  #home {
+    padding-top: 200px;
+  }
+
+  #about {
+    padding-top: 80px;
+  }
+
+  #caseStudies {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .headings {
+    padding-left: 0;
+    text-align: center;
+  }
+	.heading1, .heading1-reverse{
+		margin-bottom: -.4em;
+	}
+  .heading3-reverse {
+    text-align: center;
+  }
+
+  .thumb {
+    margin: 70px auto -30px auto;
+  }
 }
-  
-@media screen and (max-height: 450px) {
-	.overlay {
-	  a {
-			font-size: 20px;
-	  }
-	  .closebtn {
-			font-size: 40px;
-			top: 15px;
-			right: 35px;
-	  }
-	}
-}
-  
-  /*** MEDIA QUERIES ***/
-  
-@media (max-width: 992px) {
-	.content {
-	  max-width: 100%;
-	}
-	.textCover {
-	  font-size: 80px;
-	}
-}
-  
-@media (min-width: 769px) {
-	.sections {
-	  height: 100%;
-	}
-	.tabletAnimation {
-	  width: 80%;
-	}
-}
-  
-@media (max-width: 768px) {
-	.menu {
-	  padding-top: 18px;
-	  li {
-			margin-left: 0px;
-	  }
-	}
-	.juan-header {
-	  font-size: 26px;
-	}
-	.uxui-header {
-	  font-size: 22px;
-	}
-	.menu {
-	  a {
-			display: none;
-	  }
-	  .icon {
-			display: block;
-	  }
-	}
-	.textCover {
-	  font-size: 60px;
-	}
-	.content {
-	  max-width: 90%;
-	}
-	.bottomSpace {
-	  padding-bottom: 50px;
-	}
-	#home {
-	  padding-top: 200px;
-	}
-	#about {
-	  padding-top: 80px;
-	}
-	#caseStudies {
-	  padding-top: 80px;
-	  padding-bottom: 10px;
-	}
-	.headings {
-	  padding-left: 0;
-	  text-align: center;
-	}
-	.heading3-reverse {
-	  text-align: center;
-	}
-	.thumb {
-	  margin-top: 20px;
-	  margin-left: auto;
-	  margin-right: auto;
-	  margin-bottom: 40px;
-	}
-}
-  
+
+
 @media (max-width: 400px) {
-	.juan-header {
-	  font-size: 24px;
+  .juan-header {
+    font-size: 20px;
+  }
+
+  .uxui-header {
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+
+  .textCover {
+    font-size: 50px;
 	}
-	.uxui-header {
-	  font-size: 18px;
-	}
-	.copy {
-	  font-size: 14px;
-	}
-	.textCover {
-	  font-size: 50px;
-	}
+
 }
